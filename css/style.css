@@ -1,0 +1,121 @@
+body {
+  color: #1d1502;
+  font-size: 20px;
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #fffdf8;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+header h1 {
+  padding-top: 23px;
+  padding-bottom: 29px;
+}
+/* ここからメニュー */
+header nav {
+  border-top: 2px solid #6a6a6a;
+  border-bottom: 2px solid #6a6a6a;
+  text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+header li {
+  display: inline;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+header li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+header li.active a {
+  font-weight: bold;
+  color: #000;
+}
+/* ここまでメニュー*/
+p.visual {
+  margin-bottom: 67px;
+}
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 57px;
+}
+main section {
+  margin-bottom: 67px;
+  border-bottom: 3px solid #000;
+}
+main section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+main ul {
+  margin-bottom: 67px;
+}
+main li {
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+main section p {
+  text-align: left;
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+main div li {
+  display: block;
+  margin: 50px;
+}
+main aside a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+footer {
+  background-color: #322707;
+  padding-top: 42px;
+}
+footer section {
+  background-color: #5f4e1c;
+  width: 540px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 11px 110.5px;
+}
+footer section p {
+  font-size: 28px;
+  font-weight: bold;
+}
+footer p img {
+  padding: 30px;
+}
+address {
+  color: #fffdf8;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+address img {
+  padding-right: 9px;
+}
+footer p small {
+  color: #fffdf8;
+  font-family: Georgia;
+  background-color: #000;
+  padding: 18px;
+  display: block;
+}

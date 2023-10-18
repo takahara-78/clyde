@@ -1,0 +1,65 @@
+@import url(common.css);
+
+main div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main section {
+  border: 2px solid #4a4a4a;
+  margin-top: 67px;
+  padding: 44px 30px;
+  /* フレックボックス・幅サイズ */
+  flex-basis: 47.3%;
+}
+
+main section figcaption {
+  color: #54410c;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 22px;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 48px;
+}
+main section p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 28px;
+  margin-top: 20px;
+}
+main section h2 {
+  color: #54410c;
+  font-size: 24px;
+  margin-top: 12px;
+}
+/* セクション３つの四角いボタンの設定 */
+main section a {
+  background-color: #6b5311;
+  color: #fffdf8;
+  font-size: 18px;
+  display: block;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 19px;
+
+  background-image: url(../img/vector.png);
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+
+  padding: 16.5px 0px;
+}
+main section a:hover {
+  opacity: 0.7;
+}
+
+/* レスポンシブ */
+@media (max-width: 991px) {
+  /* タブレット フレックボックス解除 */
+  main div {
+    display: block;
+  }
+}

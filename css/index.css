@@ -1,0 +1,57 @@
+@import url(common.css);
+
+p.visual {
+  margin-bottom: 67px;
+}
+main section {
+  margin-bottom: 67px;
+  border-bottom: 3px solid #000;
+}
+main section h2 {
+  font-family: "Kaisei Tokumin", serif;
+  /* グーグルフォント追加 */
+  font-size: 28px;
+  font-weight: bold;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+main ul {
+  margin-bottom: 67px;
+  /* フレックボックス化 */
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+main ul li {
+  align-self: center;
+}
+main section p {
+  text-align: left;
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+main ul.event {
+  display: block;
+}
+main ul.event li {
+  display: block;
+  margin: 50px;
+}
+
+/* レスポンシブ */
+@media (max-width: 767px) {
+  /* メインビジュアル */
+  .visual img {
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+  }
+  main ul.event li {
+    margin: 50px 0px;
+  }
+}

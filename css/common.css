@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap");
+/* 自動スクロール */
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1d1502;
+  font-size: 20px;
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #fffdf8;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+[id] {
+  /* ↑idがついてる全属性 */
+  scroll-margin-top: 70px;
+}
+header h1 {
+  padding-top: 23px;
+  padding-bottom: 29px;
+}
+
+/* メニュー */
+nav {
+  border-top: 2px solid #6a6a6a;
+  border-bottom: 2px solid #6a6a6a;
+  text-align: center;
+  margin-bottom: 50px;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  /* メニュー上部固定 */
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 253, 248, 0.9);
+  z-index: 1;
+}
+nav ul {
+  /* メニューのフレックボックス化 */
+  display: flex;
+  justify-content: space-between;
+  /* メニュー幅 の設定*/
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #54410c;
+}
+nav li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+nav li.active a {
+  font-weight: bold;
+  color: #000;
+}
+/* ここまでメニュー*/
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 57px;
+}
+
+/* menu.html contact.htmlにて共通見出し */
+main h1 {
+  font-family: "Kaisei Tokumin", serif;
+
+  font-size: 40px;
+  font-weight: bold;
+  background-image: url(../img/todaymenu_bacgroound.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 57px;
+}
+/* 予約バナー */
+main aside {
+  margin-top: 67px;
+}
+main aside a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+footer {
+  background-color: #322707;
+  padding: 42px 15px 0px 15px;
+}
+footer section {
+  background-color: #5f4e1c;
+  max-width: 540px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 11px 110.5px;
+}
+footer section p {
+  font-size: 28px;
+  font-weight: bold;
+}
+footer div p {
+  padding: 30px 0px;
+}
+address {
+  color: #fffdf8;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+address img {
+  padding-right: 9px;
+}
+footer p small {
+  color: #fffdf8;
+  font-family: Georgia;
+  background-color: #000;
+  padding: 18px;
+  display: block;
+  margin: 0px -15px 0px -15px;
+}
+/* ページトップ */
+footer p.pagetop {
+  position: fixed;
+  right: 34px;
+  bottom: 34px;
+}
+
+/* レスポンシブ */
+@media (max-width: 991px) {
+  /* タブレット上部メニュー */
+  nav ul {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 767px) {
+  /* スマホ上部メニュー スティッキー解除 フレックボックス解除 位置調整 */
+  nav {
+    position: unset;
+  }
+  nav ul {
+    display: block;
+  }
+  nav li {
+    padding: 12px 0px;
+  }
+  /* コピーライト非表示 */
+  footer p span {
+    display: none;
+  }
+  footer section {
+    padding: 11px 0px;
+  }
+}
